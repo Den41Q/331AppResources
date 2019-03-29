@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:gravity="bottom|right"
+        android:textSize="50sp"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/MC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:text="MC"/>
+
+    <Button
+        android:id="@+id/M_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_toRightOf="@id/MC"
+        android:text="M+"/>
+
+    <Button
+        android:id="@+id/M_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_toRightOf="@id/M_plus"
+        android:text="M-"/>
+
+    <Button
+        android:id="@+id/MR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_toRightOf="@+id/M_minus"
+        android:text="MR"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MC"
+        android:text="C"/>
+
+    <Button
+        android:id="@+id/sign_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/M_plus"
+        android:layout_toRightOf="@+id/clear"
+        android:text="+/-"/>
+
+    <Button
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/M_minus"
+        android:layout_toRightOf="@+id/sign_change"
+        android:text="%"/>
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MR"
+        android:layout_toRightOf="@+id/percent"
+        android:text="/"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="7"
+        android:layout_below="@+id/clear"
+        android:id="@+id/btn_7"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="8"
+        android:layout_below="@+id/sign_change"
+        android:layout_toRightOf="@+id/btn_7"
+        android:id="@+id/btn_8"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="9"
+        android:layout_below="@+id/percent"
+        android:layout_toRightOf="@+id/btn_8"
+        android:id="@+id/btn_9"/>
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/division"
+        android:layout_toRightOf="@+id/btn_9"
+        android:text="*"/>
+
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="4"
+        android:layout_below="@id/btn_7"
+        android:id="@+id/btn_4"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="5"
+        android:layout_below="@+id/btn_8"
+        android:layout_toRightOf="@id/btn_4"
+        android:id="@+id/btn_5"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="6"
+        android:layout_below="@id/btn_9"
+        android:layout_toRightOf="@+id/btn_5"
+        android:id="@+id/btn_6"/>
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/multiplication"
+        android:layout_toRightOf="@id/btn_6"
+        android:text="-"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="1"
+        android:layout_below="@id/btn_4"
+        android:id="@+id/btn_1"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="2"
+        android:layout_below="@id/btn_5"
+        android:layout_toRightOf="@id/btn_1"
+        android:id="@+id/btn_2"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="3"
+        android:layout_below="@id/btn_6"
+        android:layout_toRightOf="@id/btn_2"
+        android:id="@+id/btn_3"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/minus"
+        android:layout_toRightOf="@id/btn_3"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_1"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btn_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_3"
+        android:layout_toRightOf="@id/btn_0"
+        android:text="."/>
+
+    <Button
+        android:id="@+id/equals_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plus"
+        android:layout_toRightOf="@id/btn_point"
+        android:text="="/>
+</RelativeLayout>

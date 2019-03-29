@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom|right"
+        android:textSize="50sp"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/MC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintRight_toLeftOf="@id/M_plus"
+        android:text="MC"/>
+
+    <Button
+        android:id="@+id/M_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/MC"
+        android:text="M+"/>
+
+    <Button
+        android:id="@+id/M_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/M_plus"
+        android:text="M-"/>
+
+    <Button
+        android:id="@+id/MR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/M_minus"
+        android:text="MR"/>
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/MC"
+        app:layout_constraintRight_toLeftOf="@id/Sqrt"
+        android:text="C"/>
+
+    <Button
+        android:id="@+id/Sqrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/M_plus"
+        app:layout_constraintLeft_toRightOf="@id/clear"
+        android:text="Sqrt"/>
+
+    <Button
+        android:id="@+id/one_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/M_minus"
+        app:layout_constraintLeft_toRightOf="@id/Sqrt"
+        android:text="1/x"/>
+
+    <Button
+        android:id="@+id/sign_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/MR"
+        app:layout_constraintLeft_toRightOf="@id/one_x"
+        android:text="+/-"/>
+
+    <Button
+        android:id="@+id/cos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/clear"
+        app:layout_constraintRight_toLeftOf="@id/sin"
+        android:text="cos"/>
+
+    <Button
+        android:id="@+id/sin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Sqrt"
+        app:layout_constraintLeft_toRightOf="@id/cos"
+        android:text="sin"/>
+
+    <Button
+        android:id="@+id/tan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/one_x"
+        app:layout_constraintLeft_toRightOf="@id/sin"
+        android:text="tan"/>
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sign_change"
+        app:layout_constraintLeft_toRightOf="@id/tan"
+        android:text="log"/>
+
+    <Button
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cos"
+        app:layout_constraintRight_toLeftOf="@id/inv"
+        android:text="%"/>
+
+    <Button
+        android:id="@+id/inv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sin"
+        app:layout_constraintLeft_toRightOf="@id/percent"
+        android:text="inv"/>
+
+    <Button
+        android:id="@+id/RAD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tan"
+        app:layout_constraintLeft_toRightOf="@id/inv"
+        android:text="RAD"/>
+
+    <Button
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/log"
+        app:layout_constraintLeft_toRightOf="@id/RAD"
+        android:text="e"/>
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/btn_9"
+        android:text="/"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="7"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/MR"
+        android:id="@+id/btn_7"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="8"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/btn_7"
+        android:id="@+id/btn_8"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="9"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/btn_8"
+        android:id="@+id/btn_9"/>
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/division"
+        app:layout_constraintLeft_toRightOf="@id/btn_6"
+        android:text="*"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="4"
+        app:layout_constraintTop_toBottomOf="@id/btn_7"
+        app:layout_constraintLeft_toRightOf="@id/sign_change"
+        android:id="@+id/btn_4"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="5"
+        app:layout_constraintTop_toBottomOf="@id/btn_8"
+        app:layout_constraintLeft_toRightOf="@id/btn_4"
+        android:id="@+id/btn_5"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="6"
+        app:layout_constraintTop_toBottomOf="@id/btn_9"
+        app:layout_constraintLeft_toRightOf="@id/btn_5"
+        android:id="@+id/btn_6"/>
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/multiplication"
+        app:layout_constraintLeft_toRightOf="@id/btn_3"
+        android:text="-"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="1"
+        app:layout_constraintTop_toBottomOf="@id/btn_4"
+        app:layout_constraintLeft_toRightOf="@id/log"
+        android:id="@+id/btn_1"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="2"
+        app:layout_constraintTop_toBottomOf="@id/btn_5"
+        app:layout_constraintLeft_toRightOf="@id/btn_1"
+        android:id="@+id/btn_2"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="3"
+        app:layout_constraintTop_toBottomOf="@id/btn_6"
+        app:layout_constraintLeft_toRightOf="@id/btn_2"
+        android:id="@+id/btn_3"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_3"
+        app:layout_constraintLeft_toRightOf="@id/btn_point"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/btn_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_1"
+        app:layout_constraintLeft_toRightOf="@id/e"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btn_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_2"
+        app:layout_constraintLeft_toRightOf="@id/btn_0"
+        android:text="."/>
+
+    <Button
+        android:id="@+id/equals_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/minus"
+        app:layout_constraintLeft_toRightOf="@id/plus"
+        android:text="="/>
+</androidx.constraintlayout.widget.ConstraintLayout>
